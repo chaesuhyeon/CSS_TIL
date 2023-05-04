@@ -1,11 +1,8 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
-  font-family: sans-serif;
+body {
   color: #444;
+  font-family: sans-serif;
+
+  border-top: 10px solid #1098ad;
 }
 
 h1,
@@ -80,6 +77,79 @@ aside {
   border-bottom: 5px solid #1098ad;
 }
 
-body {
-  /* background-color: blue; */
+/* .first-li {
+  font-weight: bold;
+} */
+
+li:first-child {
+  font-weight: bold;
 }
+
+li:last-child {
+  font-style: italic;
+}
+
+/* li의 두번째 요소들만 red */
+/* li:nth-child(2) {
+  color: red;
+} */
+
+/*li 자식들 중 홀수만 red */
+li:nth-child(odd) {
+  /* color: red; */
+}
+
+/* Misconception: this won't work!    --> article의 첫번째 요소가 p가 아니기 때문에 적용이 안됨*/
+article p:first-child {
+  color: red;
+}
+
+/*Styling links */
+
+a {
+  /* href 속성이 없는 a태그를 대상으로 함 */
+  /* color: red; */
+}
+
+a:link {
+  /* 실제 링크 만을 대상으로 함 (href 속성이 있는 a태그) */
+  color: #1098ad;
+  text-decoration: none; /*밑줄 없앰*/
+}
+
+a:visited {
+  /* 방문한 링크 처리 */
+  /* color: #777; */
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline wavy orangered;
+  /* text-decoration: underline dotted orangered; */
+}
+
+a:active {
+  /* 실제로 클릭하는 상태 */
+  background-color: black;
+  font-style: italic;
+}
+
+/* Resolving conflicts */
+/* 이렇게 같은 요소에 style이 충돌 할 때, 1. !import 키워드가 있는 속성 먼저 -> 2. inline style -> 3. id 선택자 -> 4.class -> 5. element 직접 지정 속성 (h1,,p) -> 6.범용 속성 (*)  */
+/* #copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green;
+} */
