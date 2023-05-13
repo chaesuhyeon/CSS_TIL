@@ -1,94 +1,102 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  color: #444;
-  font-family: sans-serif;
+    color: #444;
+    font-family: sans-serif;
 
-  border-top: 10px solid #1098ad;
+    border-top: 10px solid #1098ad;
 }
 
+.container {
+    width: 700px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 0 auto;
+}
 .main-header {
-  background-color: #f7f7f7;
-  /* padding: 20px;
+    background-color: #f7f7f7;
+    /* padding: 20px;
   padding-left: 40px;
   padding-right: 40px; */
-  padding: 20px 40px; /* 상하 padding 20px, 좌우 padding 40px */
-  margin-bottom: 60px;
+    padding: 20px 40px; /* 상하 padding 20px, 좌우 padding 40px */
+    margin-bottom: 60px;
+    height: 80px;
 }
 
 nav {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 article {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .post-header {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 aside {
-  background-color: #f7f7f7;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
-  /* padding-top: 50px;
+    background-color: #f7f7f7;
+    border-top: 5px solid #1098ad;
+    border-bottom: 5px solid #1098ad;
+    /* padding-top: 50px;
   padding-bottom: 50px; */
-  padding: 50px 0;
+    padding: 50px 0;
+    width: 500px;
 }
 
 h1,
 h2,
 h3 {
-  color: #1098ad;
+    color: #1098ad;
 }
 
 h1 {
-  font-size: 26px;
-  text-transform: uppercase;
-  font-style: italic;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-style: italic;
 }
 
 h2 {
-  font-size: 40px;
-  margin-bottom: 30px;
+    font-size: 40px;
+    margin-bottom: 30px;
 }
 
 h3 {
-  font-size: 30px;
-  margin-bottom: 20px;
-  margin-top: 40px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 h4 {
-  font-size: 20px;
-  text-transform: uppercase;
-  text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 p {
-  font-size: 22px;
-  line-height: 1.5;
-  margin-bottom: 15px;
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 15px;
 }
 
 ul,
 ol {
-  margin-left: 50px;
-  margin-bottom: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;
 }
 
 li {
-  font-size: 20px;
-  margin-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 li:last-child {
-  /*li에서 마지막 요소에는 marin-bottom 을 주지 않는다. */
-  margin-bottom: 0;
+    /*li에서 마지막 요소에는 marin-bottom 을 주지 않는다. */
+    margin-bottom: 0;
 }
 
 /* footer p {
@@ -101,21 +109,21 @@ li:last-child {
 } */
 
 #author {
-  font-style: italic;
-  font-size: 18px;
+    font-style: italic;
+    font-size: 18px;
 }
 
 #copyright {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 .related-author {
-  font-size: 18px;
-  font-weight: bold;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .related {
-  list-style: none;
+    list-style: none;
 }
 
 /* .first-li {
@@ -123,11 +131,11 @@ li:last-child {
 } */
 
 li:first-child {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 li:last-child {
-  font-style: italic;
+    font-style: italic;
 }
 
 /* li의 두번째 요소들만 red */
@@ -137,44 +145,49 @@ li:last-child {
 
 /*li 자식들 중 홀수만 red */
 li:nth-child(odd) {
-  /* color: red; */
+    /* color: red; */
 }
 
 /* Misconception: this won't work!    --> article의 첫번째 요소가 p가 아니기 때문에 적용이 안됨*/
 article p:first-child {
-  color: red;
+    color: red;
 }
 
 /*Styling links */
 
 a {
-  /* href 속성이 없는 a태그를 대상으로 함 */
-  /* color: red; */
+    /* href 속성이 없는 a태그를 대상으로 함 */
+    /* color: red; */
 }
 
 a:link {
-  /* 실제 링크 만을 대상으로 함 (href 속성이 있는 a태그) */
-  color: #1098ad;
-  text-decoration: none; /*밑줄 없앰*/
+    /* 실제 링크 만을 대상으로 함 (href 속성이 있는 a태그) */
+    color: #1098ad;
+    text-decoration: none; /*밑줄 없앰*/
 }
 
 a:visited {
-  /* 방문한 링크 처리 */
-  /* color: #777; */
-  color: #1098ad;
+    /* 방문한 링크 처리 */
+    /* color: #777; */
+    color: #1098ad;
 }
 
 a:hover {
-  color: orangered;
-  font-weight: bold;
-  text-decoration: underline wavy orangered;
-  /* text-decoration: underline dotted orangered; */
+    color: orangered;
+    font-weight: bold;
+    text-decoration: underline wavy orangered;
+    /* text-decoration: underline dotted orangered; */
 }
 
 a:active {
-  /* 실제로 클릭하는 상태 */
-  background-color: black;
-  font-style: italic;
+    /* 실제로 클릭하는 상태 */
+    background-color: black;
+    font-style: italic;
+}
+
+.post-img {
+    width: 100%;
+    height: auto;
 }
 
 /* Resolving conflicts */
