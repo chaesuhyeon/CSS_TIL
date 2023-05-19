@@ -279,7 +279,7 @@ footer p {
 } */
 
 /* FLOATS */
-.author-img {
+/* .author-img {
   float: left;
   margin-bottom: 20px;
 }
@@ -299,7 +299,7 @@ nav {
 }
 
 .clear {
-  clear: both; /* float를  left, right 둘다 썼기 때문*/
+  clear: both; float를  left, right 둘다 썼기 때문
 }
 
 .clearfix::after {
@@ -309,13 +309,13 @@ nav {
 }
 
 article {
-  width: 825px; /*container의 넓이는 1200px*/
+  width: 825px; container의 넓이는 1200px
   float: left;
 }
 aside {
-  width: 300px; /*container의 넓이는 1200px*/
+  width: 300px; container의 넓이는 1200px
   float: right;
 }
 footer {
   clear: both;
-}
+} */

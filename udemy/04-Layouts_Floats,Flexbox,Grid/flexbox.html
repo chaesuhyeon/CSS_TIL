@@ -38,7 +38,7 @@
         background-color: #ddd;
         font-size: 34px;
         margin: 40px;
-        gap: 30px;
+        gap: 10px;
 
         /* FLEXBOX */
         display: flex;
@@ -47,6 +47,18 @@
         justify-content: flex-start;
         align-items: center; /* 수직 정렬 */
         /* align-items: stretch; stretch : 세로길이가 가장 큰 요소만큼 자동으로 늘어남 */
+      }
+
+      .el {
+        /* 
+        DEFAULTS :
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto; */
+
+        flex-shrink: 0;
+        /* flex-grow: 1; 모든 요소들의 크기가 같음 */
+        flex: 1;
       }
 
       .el--1 {
