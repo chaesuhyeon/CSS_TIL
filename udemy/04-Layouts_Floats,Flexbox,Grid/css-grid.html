@@ -41,25 +41,66 @@
 
         /* CSS GRID */
         display: grid;
-        grid-template-columns: 200px 200px 100px 100px;
-        grid-template-rows: 300px 200px;
+        /* grid-template-columns: 200px 200px 1fr 1fr; */
+        /* grid-template-rows: 300px 200px; */
+        /* grid-template-columns: 1fr 1fr 1fr auto; */
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        /* height: 600px; */
         /* gap: 30px; */
-        column-gap: 30px;
-        row-gap: 60px;
+        column-gap: 10px;
+        row-gap: 40px;
+
+        /* TEMP */
+        display: none;
+      }
+
+      .el--8 {
+        grid-column: 2 / 3;
+        grid-row: 1/2;
+      }
+
+      .el--2 {
+        /* grid-column: 1 / 4; */
+        /* grid-column: 1 / span 3; grid-column: 1 / 4 이것과 같은 말 */
+        grid-column: 1 / -1; /* 그리드 1열부터 우측 끝까지(-1) */
+        grid-row: 2; /* 2/3 --> 두 숫자의 차이가  +1 나면 뒤에 숫자 생략할 수 있음 */
+      }
+
+      .el--6 {
+        /* grid-row: 3/5; */
       }
 
       .container--2 {
-        display: none;
         /* STARTER */
         font-family: sans-serif;
         background-color: black;
         font-size: 40px;
-        margin: 100px;
+        margin: 40px;
 
-        width: 1000px;
+        width: 700px;
         height: 600px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+        gap: 50px;
+
+        /* Aligning tracks inside container :
+             distribute empty space; */
+        /* content는 트랙정렬!! */
+        justify-content: center;
+        align-content: center;
+
+        /* Aligning items INSIDE cells : moving items around inside cells*/
+        align-items: end;
+        justify-items: end;
+      }
+
+      .el--3 {
+        align-self: end;
+        justify-self: end;
       }
     </style>
   </head>
@@ -71,7 +112,7 @@
       <div class="el el--4">(4) are</div>
       <div class="el el--5">(5) amazing</div>
       <div class="el el--6">(6) languages</div>
-      <div class="el el--7">(7) to</div>
+      <!-- <div class="el el--7">(7) to</div> -->
       <div class="el el--8">(8) learn</div>
     </div>
 
