@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omifood Hero Section</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-family: "Rubik", sans-serif;
+        color: #444;
+      }
+
+      .container {
+        margin: 0 auto;
+        width: 1200px;
+      }
+
+      header {
+        height: 100vh; /*view port 100으로 지정하면 내가 키고 있는 웹 화면 부분 꽉차게. 50vh로 지정하면 내가 보고 있는 웹화면 반만 높이 지정 */
+        position: relative;
+
+        background-image: linear-gradient(
+            rgba(34, 34, 34, 0.6),
+            rgba(34, 34, 34, 0.6)
+          ),
+          url(/hero.jpg);
+        background-size: cover;
+        color: #fff;
+      }
+
+      nav {
+        font-size: 20px;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 32px; /* marign으로 하면 엘레먼트 외부에 빈 공간이 생기는 거라서 padding 으로 위 공간 띄워줌 */
+        /* background-image: linear-gradient(to right, red, blue); */
+      }
+
+      .header-container {
+        width: 1200px;
+        position: absolute;
+
+        /* In relation to PARENT size */
+        left: 50%;
+        top: 50%;
+
+        /* In relation to ELEMENT size  */
+        transform: translate(-50%, -50%);
+      }
+
+      .header-container-inner {
+        width: 50%;
+      }
+
+      h1 {
+        font-size: 52px;
+        margin-bottom: 32px;
+        line-height: 1.05;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 1.6;
+        margin-bottom: 48px;
+      }
+
+      .btn:link,
+      .btn:visited {
+        font-size: 20px;
+        font-weight: 600;
+        background-color: #e67e22;
+        color: #fff;
+        text-decoration: none;
+
+        display: inline-block;
+        padding: 16px 32px;
+        border-radius: 9px;
+      }
+
+      h2 {
+        font-size: 44px;
+        margin-bottom: 48px;
+      }
+
+      section {
+        padding: 96px 0;
+        background-color: #f7f7f7;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div>LOGO</div>
+        <div>NAVIGATION</div>
+      </nav>
+
+      <div class="header-container">
+        <div class="header-container-inner">
+          <h1>A healty meal deliverd to your door, every single day</h1>
+          <p>
+            The smart 365-days-per-year food subscription that will make you eat
+            healty algain. Tailored to your personal tastes and nutritional
+            needs
+          </p>
+          <a href="#" class="btn">Start eating well</a>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <h2>Some random heading</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
+          quam ducimus debitis? Veritatis est nihil voluptatum inventore
+          voluptatem beatae quia voluptatibus, recusandae eaque assumenda? Neque
+          velit obcaecati debitis mollitia necessitatibus! Lorem ipsum dolor,
+          sit amet consectetur adipisicing elit. Esse eaque sapiente dolorum
+          inventore qui consequatur laboriosam vero. Sapiente praesentium
+          exercitationem reiciendis tenetur quod, voluptas quia enim vitae sint,
+          accusantium qui!
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
